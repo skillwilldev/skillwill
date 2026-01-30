@@ -1,3 +1,3 @@
 # Skillwill Homework Repository
 
-This repository contains all my **homework assignments** from **Skillwill school**.
+This repository contains my **homework assignments** from **Skillwill school**.
