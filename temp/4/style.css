@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.background-fill {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #19A1AE;
+    position: relative;
+    padding: 300px 0;
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.header-background {
+    margin-bottom: 65px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile-img {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.profile h1 span {
+    color: #6B7082;
+    font-weight: 400;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.profile p {
+    color: #6B7082;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.people {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+    border-top: 1px solid #E8E9EC;
+    text-align: center;
+}
+
+.people span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.people p {
+    font-size: 10px;
+    color: #6B7082;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+
+.background-fill::before {
+    content: "";
+    width: 970px;
+    height: 970px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%) rotate(220deg);
+    background: linear-gradient(180deg, #0989b400 0%, rgba(83, 255, 238, 0.25) 100%);
+}
+
+.background-fill::after {
+    content: "";
+    width: 970px;
+    height: 970px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    transform: translate(50%, 50%) rotate(100deg);
+    background: linear-gradient(180deg, #0989b400 0%, rgba(83, 255, 238, 0.25) 100%);
+}

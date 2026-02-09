@@ -1,0 +1,214 @@
+@import url(./null.css);
+@import url(./fonts.css);
+
+body {
+    font-family: 'Inter-Regular', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header .logo a {
+    font-family: 'Inter-Bold', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5B47D1;
+    background-color: #F0EDFF;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.header__top nav ul {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.header__top nav ul li a {
+    font-family: 'Inter-Medium', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+}
+
+.header__banner {
+    background: url(../img/banner.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    /* background: url(../img/banner.png) center top / cover no-repeat;  */
+}
+
+h1 {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    color: #fff;
+}
+
+.header__banner p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+}
+
+main {
+    background-color: #F5F5F7;
+}
+
+.cards__header {
+    font-family: 'Inter-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding-bottom: 150px;
+}
+
+.card .card__header {
+    width: 100%;
+    height: 240px;
+}
+
+.cards .card:nth-child(1) .card__header {
+    background-color: #C7B8FF;
+}
+
+.cards .card:nth-child(2) .card__header {
+    background-color: #FFB8D8;
+}
+
+.cards .card:nth-child(3) .card__header {
+    background-color: #B8E0FF;
+}
+
+.cards .card:nth-child(4) .card__header {
+    background-color: #D4FFB8;
+}
+
+.cards .card:nth-child(5) .card__header {
+    background-color: #FFE4B8;
+}
+
+.cards .card:nth-child(6) .card__header {
+    background-color: #FFD4B8;
+}
+
+.card__footer {
+    padding: 15px 30px 19px 19px;
+    background-color: #fff;
+    height: 210px;
+}
+
+.card__footer-header {
+    font-family: 'Inter-Regular', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000;
+    padding-bottom: 6px;
+}
+
+.card__footer h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    padding-bottom: 5px;
+}
+
+.card__footer p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.footer__inner {
+    background-color: #252424;
+    padding: 57px 0px 47px 0px;
+}
+
+footer .about h3,
+footer .footer__contacts h3,
+footer .footer__categories h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 12px;
+    color: #FFFFFF;
+}
+
+footer .about p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #A1A1A6;
+    max-width: 300px;
+}
+
+.footer__categories ul li,
+.footer__contacts ul li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A1A1A6;
+}
+
+.footer__categories ul li:not(:last-child),
+.footer__contacts ul li:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__bottom {
+    background-color: #020202;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer__bottom p {
+    font-family: 'Inter-SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #86868B;
+    text-align: center;
+    padding: 19px 0;
+
+}

@@ -1,0 +1,47 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v31-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v31-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v31-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v31-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat-ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/montserrat-v31-latin-800.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat-Black';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/montserrat-v31-latin-900.woff2') format('woff2');
+}

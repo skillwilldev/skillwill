@@ -1,0 +1,246 @@
+:root {
+    --bg-color: #F2F4F8;
+    --heder-text-color: #afafaf;
+    --heder-text-hover: #646464;
+    --header-color: #546596;
+
+    --border-color: #d2d2d2;
+    --black: #000;
+    --switch-tumbler: #9c9c9c;
+    --green-color: #008000;
+    --text-secondary: #000;
+
+}
+
+body:has(#switch:checked) {
+    --bg-color: #081028;
+    --heder-text-color: #ffffff;
+    --heder-text-hover: #AEB9E1;
+    --header-color: #162a64cc;
+
+    --border-color: #bfbfbf;
+    --black: #434343;
+    --switch-tumbler: #9c9c9c;
+    --green-color: #0b850b;
+    --text-secondary: #fff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+}
+
+
+.container {
+    max-width: 1044px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header {
+    background-color: var(--header-color);
+    margin-bottom: 20px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 0;
+
+}
+
+header .header__inner nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header .header__inner nav ul li {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--heder-text-color);
+    transition: color .1s ease-in-out;
+}
+
+@media (hover: hover) {
+    header .header__inner nav ul li:hover {
+        color: var(--heder-text-hover);
+    }
+}
+
+header .header__inner nav ul li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.header__switch input {
+    display: none;
+}
+
+.header__switch label {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 21px;
+}
+
+.header__switch label span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+    border-radius: 99px;
+    position: relative;
+}
+
+.header__switch label span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--switch-tumbler);
+}
+
+#switch:checked+label span::before {
+    left: unset;
+    right: 2px;
+}
+
+.cards__header {
+    font-weight: 700;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    color: var(--text-secondary);
+}
+
+.cards ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+}
+
+.cards ul li {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.cards ul li h3 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    color: var(--text-secondary);
+}
+
+.cards ul li h4 {
+    font-size: 14px;
+    color: var(--green-color);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px dashed var(--black);
+}
+
+.cards ul li p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.burger {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    display: none;
+}
+
+.burger span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--heder-text-color);
+    transition: all .3s ease-in-out;
+
+}
+
+.burger::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--heder-text-color);
+    transition: all .3s ease-in-out;
+}
+
+.burger::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--heder-text-color);
+    transition: all .3s ease-in-out;
+}
+
+
+#burger:checked+label .burger span {
+    scale: 0;
+}
+
+
+#burger:checked+label .burger::before {
+    transform: rotate(45deg);
+    top: 9px;
+}
+
+#burger:checked+label .burger::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+}
+
+#burger {
+    display: none;
+}
+
+
+@media (max-width: 560px) {
+    .burger {
+        display: block;
+    }
+
+    header .header__inner nav ul {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+        top: 43px;
+        gap: 20px;
+        background-color: gray;
+        height: 100%;
+        padding: 20px;
+    }
+
+    header .header__inner nav ul li {
+        color: #fff;
+    }
+
+    #burger:checked~ul {
+        display: flex;
+    }
+
+    body:has(#burger:checked) {
+        overflow: hidden;
+    }
+}

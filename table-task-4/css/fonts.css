@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'RobotoSlab Bold';
+    src: url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobotoSlab SemiBold';
+    src: url('../fonts/RobotoSlab-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobotoSlab Medium';
+    src: url('../fonts/RobotoSlab-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
