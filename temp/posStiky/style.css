@@ -10,20 +10,8 @@ body {
 
 li {
     list-style: none;
-    /* padding: 10px 20px;
-    border: 1px solid #00000032;
-    border-radius: 6px; */
     cursor: pointer;
 }
-
-ul li:not(:last-child) {
-    margin-bottom: 10px;
-}
-
-ul li:hover {
-    background-color: #0000000a;
-}
-
 
 
 
@@ -33,43 +21,28 @@ ul li:hover {
     padding: 0 10px;
 }
 
-.box {
-    display: flex;
-    gap: 60px;
+
+main section {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-
-.content {
-    /* height: 100vh;
-    overflow-y: scroll; */
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-    /* position: sticky;
-    top: 20px; */
-}
-
-ul li {
+main section h2 {
+    grid-column: 1 / 2;
+    /* grid-row: 1 / 5; */
+    padding: 0px 5px;
+    /* align-items: stretch; */
+    border-right: 1px dashed gray;
+    /* border: 1px solid black; */
     position: sticky;
-   
-}
-
-ul li:nth-child(1) {
     top: 20px;
 }
 
-ul li:nth-child(2) {
-    top: 45px;
-}
-
-ul li:nth-child(3) {
-    top: 70px;
-}
-
-ul li:nth-child(4) {
-    top: 95px;
+main section p {
+    grid-column: 2 / -1;
 }
