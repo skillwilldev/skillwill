@@ -10,18 +10,3 @@
     align-items: center;
     justify-content: center;
 }
-
-%hover-effect {
-    padding: 7px;
-    border-radius: 50%;
-
-    @media (hover: hover) {
-        &:hover {
-            background-color: #d2d2d223;
-        }
-    }
-
-    &:active {
-        background-color: #d2d2d23e;
-    }
-}
