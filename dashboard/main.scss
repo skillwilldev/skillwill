@@ -1,5 +1,5 @@
-@use './utils/variables' as v;
-@use './utils/mixins' as m;
+@use './abstracts/variables' as v;
+@use './abstracts/mixins' as m;
 
 
 * {
@@ -34,7 +34,6 @@ body {
     @include m.flex-center;
     margin-bottom: 32px;
 
-
     h2 {
         font-weight: 500;
         font-size: 31px;
@@ -42,62 +41,155 @@ body {
         color: #3D3D3D;
     }
 
-}
-
-.tasks__action {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-
-    img {
-        width: 24px;
-        height: auto;
-    }
-
-    button {
-        width: 172px;
-        height: 48px;
-        @include m.flex;
-        gap: 10px;
-        background-color: #2563DC;
-        border-radius: 8px;
-        font-family: inherit;
-        cursor: pointer;
-
-        span {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
-            color: v.$white-darken;
-        }
-
-        img {
-            width: 24px;
-            height: 24px;
-        }
-    }
-}
-
-.tasks__items {
-    display: flex;
-    gap: 24px;
-}
-
-.task__item {
-    background-color: v.$item-color-1;
-    padding: 50px 12px 12px;
-    border-radius: 12px;
-
-    .task__item-header {
+    .tasks__action {
         display: flex;
         align-items: center;
         gap: 10px;
 
-        label {
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 130%;
+        a {
+            @extend %hover-effect;
+        }
+
+        img {
+            width: 24px;
+            height: auto;
+        }
+
+        button {
+            width: 172px;
+            height: 48px;
+            @include m.flex;
+            gap: 10px;
+            background-color: #2563DC;
+            border-radius: 8px;
+            font-family: inherit;
+            cursor: pointer;
+
+            span {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: v.$white-darken;
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+
+            &:active {
+                scale: 99%;
+            }
+        }
+    }
+}
+
+
+
+.tasks__items {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+
+    .task__item:nth-child(1) {
+        background-color: v.$item-color-1;
+        box-shadow: v.$box-shadow-1;
+        border: v.$border-color-1;
+
+        .task__item-header label {
             color: v.$primary-color;
+        }
+
+    }
+
+    .task__item:nth-child(2) {
+        background-color: v.$item-color-2;
+        box-shadow: v.$box-shadow-2;
+        border: v.$border-color-2;
+
+        .task__item-header label {
+            color: v.$warning-color;
+        }
+    }
+
+    .task__item:nth-child(3) {
+        background-color: v.$item-color-3;
+        box-shadow: v.$box-shadow-3;
+        border: v.$border-color-3;
+
+        .task__item-header label {
+            color: v.$error-color;
+        }
+    }
+
+
+
+
+
+    .task__item {
+
+        padding: 12px;
+        border-radius: 12px;
+
+
+        .task__item-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+
+            label {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 130%;
+                // color: v.$primary-color;
+            }
+
+        }
+
+        .card {
+            padding: 11px 12px;
+            border: 1px solid #CAD9F6;
+            border-radius: 8px;
+            background: #FFFFFF;
+
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+
+            &__header {
+                @include m.flex-center;
+                padding-bottom: 12px;
+
+                >img {
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .card__controls {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                    a {
+                        @extend %hover-effect;
+                    }
+                }
+            }
+
+            .card__content {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+                color: #5C5C5C;
+            }
         }
     }
 }

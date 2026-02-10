@@ -7,138 +7,187 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 
     <title>Dashboard</title>
 </head>
 
 <!-- https://docs.google.com/document/d/1onGjkD18OTk4MdCPWdhAv1SLSVQb7xUGXzCzwUHuv3M/edit?tab=t.0#heading=h.4ordys66eeei -->
+
 <body>
-   <div class="container">
-     <div class="tasks">
-        <div class="tasks__header">
-            <h2>Tasks</h2>
-            <div class="tasks__action">
-                <a href="#"><img src="./img/arrow-left.svg" alt="arrow-left"></a>
-                <a href="#"><img src="./img/arrow-right.svg" alt="arrow-right"></a>
-                <a href="#"><img src="./img/users.svg" alt="users"></a>
-                <a href="#"><img src="./img/settings.svg" alt="settings"></a>
-                <button>
-                    <span>New task</span>
-                    <img src="./img/plus-icon.svg" alt="plus-icon">
-                </button>
+    <div class="container">
+        <div class="tasks">
+            <div class="tasks__header">
+                <h2>Tasks</h2>
+                <div class="tasks__action">
+                    <a href="#"><img src="./img/arrow-left.svg" alt="arrow-left"></a>
+                    <a href="#"><img src="./img/arrow-right.svg" alt="arrow-right"></a>
+                    <a href="#"><img src="./img/users.svg" alt="users"></a>
+                    <a href="#"><img src="./img/settings.svg" alt="settings"></a>
+                    <button>
+                        <span>New task</span>
+                        <img src="./img/plus-icon.svg" alt="plus-icon">
+                    </button>
+                </div>
             </div>
+
+            <div class="tasks__items">
+                <div class="task__item">
+                    <div class="task__item-header">
+                        <input type="checkbox" id="todo">
+                        <label for="todo">To do</label>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card__header">
+                                <img src="./img/card-avatar-1.svg" alt="avatar">
+                                <div class="card__controls">
+                                    <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
+                                    <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
+                                </div>
+                            </div>
+                            <p class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
+                                labore
+                                et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <img src="./img/card-avatar-1.svg" alt="avatar">
+                                <div class="card__controls">
+                                    <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
+                                    <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
+                                </div>
+                            </div>
+                            <p class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
+                                labore
+                                et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="task__item">
+                    <div class="task__item-header">
+                        <input type="checkbox" id="progress">
+                        <label for="progress">In progress</label>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card__header">
+                                <img src="./img/card-avatar-1.svg" alt="avatar">
+                                <div class="card__controls">
+                                    <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
+                                    <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
+                                </div>
+                            </div>
+                            <p class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
+                                labore
+                                et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <img src="./img/card-avatar-1.svg" alt="avatar">
+                                <div class="card__controls">
+                                    <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
+                                    <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
+                                </div>
+                            </div>
+                            <p class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
+                                labore
+                                et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <img src="./img/card-avatar-1.svg" alt="avatar">
+                                <div class="card__controls">
+                                    <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
+                                    <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
+                                </div>
+                            </div>
+                            <p class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
+                                labore
+                                et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="task__item">
+                    <div class="task__item-header">
+                        <input type="checkbox" id="done-job">
+                        <label for="done-job">Done</label>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card__header">
+                                <img src="./img/card-avatar-1.svg" alt="avatar">
+                                <div class="card__controls">
+                                    <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
+                                    <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
+                                </div>
+                            </div>
+                            <p class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
+                                labore
+                                et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <img src="./img/card-avatar-1.svg" alt="avatar">
+                                <div class="card__controls">
+                                    <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
+                                    <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
+                                </div>
+                            </div>
+                            <p class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
+                                labore
+                                et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <img src="./img/card-avatar-1.svg" alt="avatar">
+                                <div class="card__controls">
+                                    <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
+                                    <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
+                                </div>
+                            </div>
+                            <p class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
+                                labore
+                                et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <img src="./img/card-avatar-1.svg" alt="avatar">
+                                <div class="card__controls">
+                                    <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
+                                    <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
+                                </div>
+                            </div>
+                            <p class="card__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
+                                labore
+                                et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-
-        <div class="tasks__items">
-            <div class="task__item">
-                <div class="task__item-header">
-                    <input type="checkbox" id="todo">
-                    <label for="todo">To do</label>
-                </div>
-                <div class="cards">
-                    <div class="card">
-                        <div class="card__header">
-                            <img src="./img/card-avatar-1.svg" alt="avatar">
-                            <div class="card__controls">
-                                <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
-                                <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
-                            </div>
-                        </div>
-                        <p class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore
-                            et dolore magna aliqua.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="card__header">
-                            <img src="./img/card-avatar-1.svg" alt="avatar">
-                            <div class="card__controls">
-                                <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
-                                <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
-                            </div>
-                        </div>
-                        <p class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore
-                            et dolore magna aliqua.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="task__item">
-                <div class="task__item-header">
-                    <input type="checkbox" id="todo">
-                    <label for="To do"></label>
-                </div>
-                <div class="cards">
-                    <div class="card">
-                        <div class="card__header">
-                            <img src="./img/card-avatar-1.svg" alt="avatar">
-                            <div class="card__controls">
-                                <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
-                                <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
-                            </div>
-                        </div>
-                        <p class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore
-                            et dolore magna aliqua.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="card__header">
-                            <img src="./img/card-avatar-1.svg" alt="avatar">
-                            <div class="card__controls">
-                                <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
-                                <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
-                            </div>
-                        </div>
-                        <p class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore
-                            et dolore magna aliqua.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="task__item">
-                <div class="task__item-header">
-                    <input type="checkbox" id="todo">
-                    <label for="To do"></label>
-                </div>
-                <div class="cards">
-                    <div class="card">
-                        <div class="card__header">
-                            <img src="./img/card-avatar-1.svg" alt="avatar">
-                            <div class="card__controls">
-                                <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
-                                <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
-                            </div>
-                        </div>
-                        <p class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore
-                            et dolore magna aliqua.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="card__header">
-                            <img src="./img/card-avatar-1.svg" alt="avatar">
-                            <div class="card__controls">
-                                <a href="#"><img src="./img/edit-icon.svg" alt="edit"></a>
-                                <a href="#"><img src="./img/remove-icon.svg" alt="remove"></a>
-                            </div>
-                        </div>
-                        <p class="card__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore
-                            et dolore magna aliqua.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
     </div>
-   </div>
 </body>
 
 </html>
