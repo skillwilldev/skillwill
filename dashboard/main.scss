@@ -1,0 +1,103 @@
+@use './utils/variables' as v;
+@use './utils/mixins' as m;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+.container {
+    max-width: 1052px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.tasks__header {
+    @include m.flex-center;
+    margin-bottom: 32px;
+
+
+    h2 {
+        font-weight: 500;
+        font-size: 31px;
+        line-height: 130%;
+        color: #3D3D3D;
+    }
+
+}
+
+.tasks__action {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    img {
+        width: 24px;
+        height: auto;
+    }
+
+    button {
+        width: 172px;
+        height: 48px;
+        @include m.flex;
+        gap: 10px;
+        background-color: #2563DC;
+        border-radius: 8px;
+        font-family: inherit;
+        cursor: pointer;
+
+        span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: v.$white-darken;
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.tasks__items {
+    display: flex;
+    gap: 24px;
+}
+
+.task__item {
+    background-color: v.$item-color-1;
+    padding: 50px 12px 12px;
+    border-radius: 12px;
+
+    .task__item-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        label {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 130%;
+            color: v.$primary-color;
+        }
+    }
+}

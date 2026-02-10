@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1052px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.tasks__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.tasks__header h2 {
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 130%;
+  color: #3D3D3D;
+}
+
+.tasks__action {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.tasks__action img {
+  width: 24px;
+  height: auto;
+}
+.tasks__action button {
+  width: 172px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #2563DC;
+  border-radius: 8px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.tasks__action button span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F5F5F5;
+}
+.tasks__action button img {
+  width: 24px;
+  height: 24px;
+}
+
+.tasks__items {
+  display: flex;
+  gap: 24px;
+}
+
+.task__item {
+  background-color: #EEF2FC;
+  padding: 50px 12px 12px;
+  border-radius: 12px;
+}
+.task__item .task__item-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.task__item .task__item-header label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #14367B;
+}
+
+/*# sourceMappingURL=style.css.map */
