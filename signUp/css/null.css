@@ -1,0 +1,46 @@
+
+ html {
+     box-sizing: border-box;
+ }
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+     margin: 0;
+     padding: 0;
+     outline: none;
+     border: none;
+ }
+
+ li {
+     list-style: none;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-weight: inherit;
+     font-size: inherit;
+ }
+
+ img {
+     vertical-align: top;
+ }
+
+ *::before,
+ *::after {
+     display: inline-block;
+ }
+
+ a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ button {
+     font-family: inherit;
+ }
