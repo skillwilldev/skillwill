@@ -173,17 +173,21 @@ form fieldset .password label {
     right: 8px;
 }
 
-form fieldset .forgot__pass {
+form fieldset .forgot__pass{
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     color: #6F74DD;
     text-align: right;
-    display: block;
 }
 
 form fieldset button {
     height: 40px;
+    cursor: pointer;
+}
+
+form fieldset button:active {
+    scale: .99;
 }
 
 form fieldset button[type="submit"] {
@@ -209,11 +213,13 @@ form .social__btns button {
     line-height: 19px;
     background: none;
     width: 100%;
+
     img {
         width: 24px;
         height: auto;
     }
 }
+
 .social__btns {
     display: flex;
     align-items: center;
