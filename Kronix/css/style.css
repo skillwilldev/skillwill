@@ -14,6 +14,10 @@ body {
     padding: 0 10px;
 }
 
+main {
+    margin-bottom: 110px;
+}
+
 header {
     margin-bottom: 105px;
 }
@@ -390,7 +394,112 @@ h1 span {
     justify-content: center;
 }
 
-.revolution__btn img {
-    /* width: 1.09rem;
-    height: 1.09rem; */
+
+footer .agency__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    padding-bottom: 55px;
+    border-bottom: 1px solid #404040;
+    margin-bottom: 26px;
+}
+
+footer .agency__item .logo {
+    padding-bottom: 20px;
+}
+
+footer .agency__item:nth-child(1) {
+    max-width: 310px;
+}
+
+footer .agency__item-content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+footer .agency__item-contacts a {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    font-style: normal;
+}
+
+footer .agency__item-contacts a img {
+    width: 20px;
+    height: 20px;
+}
+
+footer .agency__item-contacts a:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.agency__item-contacts {
+    margin-bottom: 25px;
+}
+
+footer .agency__item-social ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+footer .agency__item-social ul li img {
+    width: 24px;
+    height: 24px;
+}
+
+footer .footer__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 35px 50px;
+}
+
+
+
+.footer__nav {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding-bottom: 35px;
+}
+
+.footer__nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer__nav ul li:not(:last-child) {
+    margin-right: 32px;
+
+}
+
+
+
+.footer__nav ul li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    transition: transform .1s ease-in-out;
+}
+
+.footer__nav ul li:hover {
+    transform: translateY(-2px);
+}
+
+footer .copyright {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
