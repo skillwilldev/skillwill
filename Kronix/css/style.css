@@ -90,6 +90,10 @@ header {
     cursor: pointer;
 }
 
+
+
+
+
 .started:hover {
     background: #b8fd50c5;
 }
@@ -392,6 +396,8 @@ h1 span {
     align-items: center;
     gap: 11px;
     justify-content: center;
+    cursor: pointer;
+    z-index: 2;
 }
 
 
