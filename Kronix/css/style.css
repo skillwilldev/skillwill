@@ -466,20 +466,10 @@ footer .footer__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 0px 50px 35px 50px; */
-}
-
-
-
-.footer__nav {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    /* padding-bottom: 35px; */
-    /* min-height: 60px; */
+       gap: 70px;
     padding: 26px 0px 35px 0px;
-    /* margin-bottom: 10px; */
 }
+
 
 .footer__nav ul {
     display: flex;
