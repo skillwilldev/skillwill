@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  max-width: 1205px;
+  max-width: 1215px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -156,6 +156,103 @@ form fieldset .form__radio-items {
   margin-bottom: 45px;
 }
 
-form fieldset .form__radio-items input[type="radio"] {
+form fieldset .form__radio-items label input[type="radio"] {
   display: none;
+}
+
+.form__radio-items .form__radio-item {
+  position: relative;
+}
+
+.form__radio-items .form__radio-item label {
+  padding-left: 23px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.form__radio-items .form__radio-item label span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-40%);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #E0E0E0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.form__radio-items .form__radio-item label span::after {
+  content: '';
+  position: absolute;
+  background: url(../img/checked.svg) no-repeat center / contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.form__radio-items .form__radio-item input[type="radio"]:checked+span::after {
+  opacity: 1;
+}
+
+.form__radio-items .form__radio-item input[type="radio"]:checked+span {
+  background-color: #000;
+}
+
+fieldset>label[for="message"] {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #8D8D8D;
+  padding-bottom: 5px;
+  display: block;
+}
+
+fieldset>textarea[id="message"] {
+  font-family: inherit;
+  width: 100%;
+  resize: vertical;
+  color: #8D8D8D;
+  border-bottom: 1px solid #8D8D8D;
+  min-height: 30px;
+  height: 30px;
+  max-height: 130px;
+  margin-bottom: 45px;
+}
+
+fieldset>textarea[id="message"]::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8D8D8D;
+}
+
+.form__btn-cover {
+  text-align: right;
+}
+
+.form__btn-cover button[type="submit"] {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: #011C2A;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  padding: 15px 48px;
+  cursor: pointer;
+}
+
+.form__btn-cover button[type="submit"]:hover {
+  background-color: #043751;
+}
+
+.form__btn-cover button[type="submit"]:active {
+  transform: scale(99%);
 }
