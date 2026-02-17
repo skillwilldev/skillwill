@@ -270,6 +270,8 @@ fieldset>textarea[id="message"]::placeholder {
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   padding: 15px 48px;
+  position: relative;
+  z-index: 2;
   cursor: pointer;
 }
 
@@ -291,7 +293,7 @@ fieldset>textarea[id="message"]::placeholder {
   width: 240px;
   height: 112px;
   background: url(../img/decore.svg) no-repeat center center / cover;
-     bottom: 0%;
-    right: -2%;
+  bottom: 0%;
+  right: -2%;
 
 }
