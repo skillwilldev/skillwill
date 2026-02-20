@@ -2,6 +2,10 @@
 font-family: "Poppins", sans-serif;
 font-family: "Plus Jakarta Sans", sans-serif; */
 
+:root {
+    --content-width: 1280px;
+}
+
 body {
     font-family: "Outfit", sans-serif;
     font-size: 16px;
@@ -9,9 +13,10 @@ body {
 }
 
 .container {
-    max-width: 1300px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
+    padding-left: max(10px, calc(100vw - var(--content-width)) / 2);
+    padding-right: max(10px, calc(100vw - var(--content-width)) / 2);
 }
 
 main {
@@ -466,7 +471,7 @@ footer .footer__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-       gap: 70px;
+    gap: 70px;
     padding: 26px 0px 35px 0px;
 }
 
