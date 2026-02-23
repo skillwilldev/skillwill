@@ -1,0 +1,10 @@
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: 'GeorgiaDemoMix'.sans-serif;
+font-family: 'Georgia-italic', sans-serif;
+font-family: 'Graphik Web', sans-serif; */
+
+h1 {
+    font-family: 'Georgia-italic', sans-serif;
+    text-decoration: underline;
+    font-size: 80px;
+}

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'GeorgiaDemoMix';
+    src: url('../fonts/GCGeorgiaDemo-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Georgia-italic';
+    src: url('../fonts/Georgia-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Web';
+    src: url('../fonts/GraphikWeb-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
