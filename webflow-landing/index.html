@@ -24,6 +24,14 @@
                 <a href="#" class="header__logo logo">
                     <img src="./img/logo.svg" alt="logo">
                 </a>
+                <label for="chb-m" id="lab">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 640 640">
+                        <path fill="#fff"
+                            d="M96 160c0-18 14-32 32-32h384a32 32 0 1 1 0 64H128c-18 0-32-14-32-32m0 160c0-18 14-32 32-32h384a32 32 0 1 1 0 64H128c-18 0-32-14-32-32m448 160c0 18-14 32-32 32H128a32 32 0 1 1 0-64h384c18 0 32 14 32 32" />
+                    </svg>
+                </label>
+                <input type="checkbox" id="chb-m">
+
                 <nav>
                     <ul class="social">
                         <li>
@@ -47,10 +55,11 @@
                     </ul>
                 </nav>
 
-                <button>
+                <button class="talk__btn">
                     <span>Let’s talk</span>
                     <img src="./img/arrow.svg" alt="arrow">
                 </button>
+
             </div>
         </div>
     </header>
@@ -59,8 +68,10 @@
         <section class="freelance">
             <div class="container">
                 <div class="freelance__inner">
-                    <h1>I create beautiful experiences</h1>
-                    <p>I work with people all over the world to create tailor-made Webflow experiences</p>
+                    <div class="freelance__header">
+                        <h1>I create <span>beautiful</span> experiences</h1>
+                        <p>I work with people all over the world to create tailor-made Webflow experiences</p>
+                    </div>
 
                     <div class="freelance__footer">
                         <span>Available for freelance work</span>
@@ -70,7 +81,7 @@
             </div>
         </section>
 
-        <section class="cards">
+        <!-- <section class="cards">
             <div class="container">
                 <div class="cards__items">
                     <div class="cards__item">
@@ -204,7 +215,7 @@
                     <span>Available for freelance work</span>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
 </body>
