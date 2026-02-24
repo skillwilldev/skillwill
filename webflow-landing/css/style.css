@@ -9,18 +9,25 @@ h1 {
     font-size: 80px;
 } */
 
+:root {
+     /* //675px */
+    --p-size: clamp(0.938rem, -0.322rem + 5.376vw, 2.5rem);
+    --p-t-size: clamp(0.938rem, -5.594rem + 27.869vw, 6.25rem); 
+    --root-p-size: clamp(0.625rem, 0.11rem + 2.198vw, 1.25rem); 
+}
+
 
 body {
     background-color: #0B001A;
     font-family: "Montserrat", sans-serif;
-    padding-top: 20px;
+    padding-top: var(--root-p-size);
 }
 
 .container {
     /* max-width: 1420px;
     padding: 0px 10px; */
-    padding-left: max(20px, calc((100vw - 1400px) / 2));
-    padding-right: max(20px, calc((100vw - 1400px) / 2));
+    padding-left: max(var(--root-p-size), calc((100vw - 1400px) / 2));
+    padding-right: max(var(--root-p-size), calc((100vw - 1400px) / 2));
     margin: 0 auto;
 
 }
@@ -112,11 +119,7 @@ header {
     }
 }
 
-:root {
-     /* //675px */
-    --p-size: clamp(0.938rem, -0.322rem + 5.376vw, 2.5rem);
-    --p-t-size: clamp(0.938rem, -5.594rem + 27.869vw, 6.25rem); 
-}
+
 
 .freelance {
     margin-bottom: 40px;
