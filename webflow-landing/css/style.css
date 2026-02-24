@@ -249,7 +249,6 @@ header {
     padding: clamp(1.25rem, -4.349rem + 10.417vw, 2.5rem);
     border-radius: 40px;
     gap: 5px;
-
     .korba__item-label {
         font-weight: 400;
         font-size: 14px;
