@@ -120,7 +120,6 @@ header {
 }
 
 
-
 .freelance {
     margin-bottom: 40px;
 
@@ -186,54 +185,185 @@ header {
     }
 }
 
-.cards__items {
-    display: flex;
-    gap: 24px;
+.cards {
+    margin-bottom: 40px;
+    .cards__items {
+        display: flex;
+        gap: 24px;
 
-    .cards__item {
-        flex: 1 1 100%;
-        background: linear-gradient(93.26deg, #8338EC 10.4%, #9C2EF5 101.06%);
-        border-radius: 20px;
-        padding: clamp(1.25rem, -1.454rem + 5.634vw, 2.25rem);
+        .cards__item {
+            flex: 1 1 100%;
+            background: linear-gradient(93.26deg, #8338EC 10.4%, #9C2EF5 101.06%);
+            border-radius: 20px;
+            padding: clamp(1.25rem, -1.454rem + 5.634vw, 2.25rem);
 
-        h2 {
-            font-weight: 400;
-            font-size: 32px;
-            line-height: 39px;
-            letter-spacing: -0.01em;
-            color: #FFFFFF;
-            padding-bottom: clamp(1.563rem, -11.113rem + 26.408vw, 6.25rem);
-        }
+            h2 {
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 39px;
+                letter-spacing: -0.01em;
+                color: #FFFFFF;
+                padding-bottom: clamp(1.563rem, -11.113rem + 26.408vw, 6.25rem);
+            }
 
-        p {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 160%;
-            color: #FFFFFF;
-            padding-bottom: 16px;
-        }
-
-        .cards__item-btns {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-
-            button {
+            p {
+                font-style: normal;
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 160%;
-                color: #fff;
-                padding: 6px 12px;
-                border: 1px solid #FFFFFF;
-                border-radius: 99px;
-                background: none;
-                cursor: pointer;
+                color: #FFFFFF;
+                padding-bottom: 16px;
+            }
 
-                &:active {
-                    transform: scale(97%);
+            .cards__item-btns {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                button {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 160%;
+                    color: #fff;
+                    padding: 6px 12px;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 99px;
+                    background: none;
+                    cursor: pointer;
+                    user-select: none;
+                    -webkit-tap-highlight-color: transparent;
+
+                    &:active {
+                        transform: scale(97%);
+                    }
                 }
             }
+        }
+    }
+}
+
+.korba__items {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E9DEFF;
+    padding: clamp(1.25rem, -4.349rem + 10.417vw, 2.5rem);
+    border-radius: 40px;
+    gap: 5px;
+
+    .korba__item-label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #0B001A;
+        padding-bottom: 16px;
+        display: inline-block
+    }
+
+    .korba__item-title {
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        color: #0B001A;
+        padding-bottom: 16px;
+    }
+
+    .korba__item:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* flex: 1 1 0;
+        min-width: 0; */
+
+        .korba__item-footer {
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 160%;
+                color: #0B001A;
+                max-width: 400px;
+                margin-bottom: 32px;
+            }
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: -0.01em;
+                text-transform: uppercase;
+                color: #0B001A;
+                padding: 10px 14px;
+                background-color: #E9DEFF;
+                box-shadow: 0px 0px 19px 9px rgba(162, 45, 247, 0.1), 0px 0px 46.8519px rgba(162, 45, 247, 0.1), 0px 0px 25.4815px rgba(162, 45, 247, 0.1), 0px 0px 13px rgba(162, 45, 247, 0.1), 0px 0px 6.51852px rgba(162, 45, 247, 0.1), 0px 0px 3.14815px rgba(162, 45, 247, 0.1);
+                border-radius: 20px;
+                cursor: pointer;
+
+                img {
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &:active {
+                    transform: scale(98%);
+                }
+            }
+        }
+    }
+
+    .korba__item:nth-child(2) {
+        flex: 0 1 50%;
+        /* min-width: 0; */
+    }
+
+    .korba__item-btns {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        button {
+            border: 1px solid #0B001A;
+            padding: 6px 12px;
+            border-radius: 99px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            color: #0B001A;
+            background: none;
+            cursor: pointer;
+
+            &:active {
+                transform: scale(95%);
+            }
+        }
+    }
+
+    .korba__item img {
+        /* max-width: 660px;
+        height: auto; */
+        width: 100%;
+        /* height: auto;
+        display: block;
+        object-fit: contain; */
+    }
+}
+
+@media (width < 870px) {
+    .korba__items {
+        display: block;
+    }
+    .korba__item-btns {
+        padding-bottom: 16px;
+    }
+
+    .korba__item-footer {
+        margin-bottom: 20px;
+        p {
+            max-width: 100% !important;
         }
     }
 }
@@ -323,6 +453,10 @@ header {
 @media (width < 490px) {
     header button {
         display: none !important;
+    }
+
+    .korba__item-footer button {
+        width: 100%;
     }
 
     /* .header__logo img {
