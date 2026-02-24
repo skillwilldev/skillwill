@@ -37,6 +37,8 @@ a {
 
 button {
     font-family: inherit;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 *::before,
