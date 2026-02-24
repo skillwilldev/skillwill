@@ -33,7 +33,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 36px;
+        padding: 20px clamp(0.625rem, -1.373rem + 8.525vw, 2.25rem);
         background-color: #1E0044;
         border-radius: 20px 20px 0px 0px;
 
@@ -112,19 +112,26 @@ header {
     }
 }
 
+:root {
+     /* //675px */
+    --p-size: clamp(0.938rem, -0.322rem + 5.376vw, 2.5rem);
+    --p-t-size: clamp(0.938rem, -5.594rem + 27.869vw, 6.25rem); 
+}
+
 .freelance {
     margin-bottom: 40px;
 
     .freelance__inner {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         background-color: #1E0044;
-        padding: 110px 40px 40px 40px;
+        padding: var(--p-t-size) var(--p-size) 40px var(--p-size);
         border-radius: 0px 0px 20px 20px;
 
         .freelance__header {
             max-width: 720px;
+            margin-bottom: 60px;
 
             h1 {
                 font-weight: 500;
@@ -132,7 +139,7 @@ header {
                 line-height: 100%;
                 letter-spacing: -0.05em;
                 color: #E9DEFF;
-                padding-bottom: 24px;
+                padding-bottom: clamp(0.875rem, 0.094rem + 3.333vw, 1.5rem);
 
                 span {
                     font-family: 'Georgia-italic', sans-serif;
@@ -148,7 +155,7 @@ header {
 
             p {
                 font-weight: 400;
-                font-size: 24px;
+                font-size: clamp(0.875rem, 0.106rem + 3.279vw, 1.5rem);
                 line-height: 120%;
                 letter-spacing: -0.04em;
                 color: #E9DEFF;
@@ -168,7 +175,21 @@ header {
                 color: #E9DEFF;
             }
 
+            img {
+                width: clamp(3.125rem, -1.25rem + 18.667vw, 6.625rem);
+            }
+
         }
+    }
+}
+
+@media (width < 840px) {
+    .freelance__header p {
+        padding-right: 0px !important;
+    }
+
+    h1 {
+        font-size: clamp(2.625rem, -0.298rem + 12.473vw, 6.25rem) !important;
     }
 }
 
@@ -236,4 +257,14 @@ header {
             display: block !important;
         }
     }
+}
+
+@media (width < 490px) {
+    header button {
+        display: none !important;
+    }
+
+    /* .header__logo img {
+        width: 150px;
+    } */
 }
