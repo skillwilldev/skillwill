@@ -253,7 +253,8 @@ header {
     .korba__items {
         display: flex;
         justify-content: space-between;
-        background-color: #E9DEFF;
+        /* background-color: #E9DEFF; */
+        background: url(../img/bg-1.jpg) no-repeat center center / cover;
         padding: clamp(1.25rem, -4.349rem + 10.417vw, 2.5rem);
         border-radius: 40px;
         gap: 5px;
@@ -365,9 +366,11 @@ header {
     margin-bottom: 40px;
 
     .trail__items {
+        position: relative;
         display: flex;
         justify-content: space-between;
-        background-color: #1E0044;
+        /* background-color: #1E0044; */
+        background: url(../img/bg-2.jpg) no-repeat center center / cover;
         padding: clamp(1.25rem, -4.349rem + 10.417vw, 2.5rem);
         border-radius: 40px;
         gap: 5px;
@@ -446,7 +449,7 @@ header {
 
             button {
                 border: 1px solid #E9DEFF;
-                padding: 6px 12px;
+                padding: 1px 10px;
                 border-radius: 99px;
                 font-weight: 400;
                 font-size: 14px;
@@ -463,6 +466,17 @@ header {
 
         .trail__item img {
             width: 100%;
+        }
+
+        &::after {
+            content: '';
+            width: clamp(5.375rem, -3.791rem + 16.857vw, 9.063rem);
+            height: clamp(5.375rem, -3.791rem + 16.857vw, 9.063rem);
+            background: url(../img/image-4.png) no-repeat center center / cover;
+            position: absolute;
+            top: 65px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }
@@ -625,6 +639,10 @@ header {
 
     .trail .trail__items {
         display: block;
+
+        &::after {
+            content: none;
+        }
     }
 
     .trail__item-btns {
