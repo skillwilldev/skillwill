@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  background-color: transparent;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.box {
+  max-width: 788px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 20px;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion__item {
+  border-left: 1px solid #d2d2d2;
+  border-top: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.accordion__item:first-child {
+  border-radius: 4px 4px 0px 0px;
+}
+.accordion__item:last-child {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.accordion__item label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+}
+.accordion__item label:hover {
+  background-color: rgba(210, 210, 210, 0.1803921569);
+}
+.accordion__item label:active {
+  background-color: rgba(210, 210, 210, 0.1803921569);
+}
+.accordion__item input {
+  display: none;
+}
+.accordion__item .item__icon {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+}
+.accordion__item .item__icon svg {
+  transition: transform 0.4s ease-in-out;
+  fill: rgba(0, 0, 0, 0.5411764706);
+}
+.accordion__item .item__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+.accordion__item .item__content p {
+  padding: 15px 10px 10px 10px;
+}
+.accordion__item input:checked ~ .item__content {
+  max-height: 500px;
+}
+.accordion__item input:checked ~ label svg {
+  transform: rotate(180deg);
+}
+
+.accordion__item:has(input:checked) {
+  margin-bottom: 16px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+/*# sourceMappingURL=style.css.map */
