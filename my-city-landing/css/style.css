@@ -1,0 +1,450 @@
+body {
+    font-family: "Istok Web", sans-serif;
+    font-size: 25px;
+}
+
+.container {
+    max-width: 1235px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header {
+
+    /* position: relative; */
+    input {
+        display: none;
+    }
+
+    label:nth-of-type(1) {
+        display: none;
+    }
+
+    margin-bottom: 70px;
+
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                font-weight: 700;
+                font-size: inherit;
+                line-height: 36px;
+                color: #37474F;
+
+                &:nth-child(1) {
+                    margin-right: 60px;
+                }
+
+                &:nth-child(2) {
+                    margin-right: 60px;
+                }
+
+                a:hover {
+                    color: #000;
+                }
+            }
+        }
+
+        .logo {
+            width: 128px;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .header__bg {
+        img {
+            width: 100%;
+            height: clamp(20rem, 6.098rem + 32.710vw, 30.938rem);
+            object-fit: cover;
+        }
+    }
+
+    .burger {
+        display: none;
+
+        .burger__menu {
+            position: relative;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #000000e6;
+                transition: all .3s ease-in-out;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #000000e6;
+                transition: all .3s ease-in-out;
+            }
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 0px;
+                transform: translateY(-50%);
+                height: 2px;
+                background-color: #000000e6;
+                width: 100%;
+                transition: all .3s ease-in-out;
+            }
+
+            &.active::before {
+                transform: rotate(45deg);
+                top: 9px;
+            }
+
+            &.active::after {
+                transform: rotate(-45deg);
+                top: 9px;
+            }
+
+            &.active span {
+                display: none;
+            }
+        }
+    }
+}
+
+
+.gallary {
+    margin-bottom: 185px;
+
+    .gallary__inner {
+        h1 {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 92px;
+            color: #000000;
+            text-align: center;
+            padding-bottom: 76px;
+        }
+
+        ul {
+            /* display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(326px, 1fr)); */
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* gap: 115px; */
+            gap: clamp(1.25rem, -31.596rem + 50.532vw, 7.188rem);
+
+            li {
+                /* flex: 1 1 326px; */
+                flex: 1 1 clamp(16.25rem, -0.861rem + 48.889vw, 20.375rem);
+
+                img {
+                    border-radius: 22px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.food {
+    background-color: #BBDEFB;
+    padding-top: 65px;
+    padding-bottom: 150px;
+
+    h2 {
+        font-weight: 700;
+        font-size: clamp(1.938rem, -0.601rem + 12.692vw, 4rem);
+        /* font-size: 64px; */
+        /* line-height: 92px; */
+        line-height: clamp(2.313rem, -1.918rem + 21.154vw, 5.75rem);
+        color: #000000;
+        text-align: center;
+        padding-bottom: 110px;
+    }
+
+    .food__items {
+        margin-bottom: 200px;
+
+        .gastronomy,
+        .culture {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 125px;
+
+            img {
+                max-width: 520px;
+                width: 100%;
+                height: auto;
+                border: 5px solid #000000;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 22px;
+            }
+
+            h3 {
+                font-style: italic;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 52px;
+                color: #000000;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 52px;
+                color: #000000;
+            }
+        }
+
+        .gastronomy {
+            margin-bottom: 130px;
+        }
+
+        .culture img {
+            order: 2;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 83px;
+        color: #000000;
+        text-align: center;
+    }
+}
+
+.social {
+    padding-top: 150px;
+    padding-bottom: 330px;
+
+    .social__inner {
+        h2 {
+            font-weight: 400;
+            font-size: 65px;
+            line-height: 84px;
+            color: #000000;
+            text-align: center;
+            padding-bottom: 150px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                width: 175px;
+                height: auto;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #BBDEFB;
+    padding-block: 95px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            li a {
+                font-weight: 800;
+                font-size: 25px;
+                line-height: 32px;
+                color: #000000;
+            }
+        }
+    }
+}
+
+@media (width < 740px) {
+    .gallary .gallary__inner h1 {
+        font-size: 64px;
+        line-height: 70px;
+        padding-bottom: 32px;
+    }
+}
+
+@media (width < 680px) {
+    header .burger {
+        display: block;
+        order: 2;
+    }
+
+    .header__inner nav {
+        display: none;
+        /* position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: gray;
+
+        ul {
+            flex-direction: column;
+            gap: 30px;
+            font-size: 35px;
+            align-items: flex-start;
+            padding: 40px;
+        } */
+    }
+
+    header .logo {
+        width: 90px !important;
+    }
+
+    header .header__inner {
+        padding: 10px 0;
+    }
+
+    .header__inner input:checked+label {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-weight: 700;
+        color: #000;
+        z-index: 5;
+    }
+
+    .header__inner input:checked~nav {
+        display: block;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: gray;
+
+        ul {
+            flex-direction: column;
+            gap: 30px;
+            font-size: 35px;
+            align-items: flex-start;
+            padding: 40px;
+        }
+    }
+
+    body:has(.header__inner input:checked) {
+        overflow: hidden;
+    }
+}
+
+
+@media (width < 1000px) {
+
+    .gastronomy,
+    .culture {
+        gap: 40px !important;
+    }
+}
+
+@media (width < 910px) {
+
+    .gastronomy {
+        flex-direction: column;
+
+        img {
+            order: 2;
+        }
+    }
+
+
+    .culture {
+        flex-direction: column;
+
+        img {
+            order: 2;
+        }
+    }
+}
+
+@media (width < 490px) {
+    .gallary .gallary__inner h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+}
+
+@media (width < 625px) {
+    .food {
+        p {
+            font-size: 38px;
+            line-height: 55px;
+        }
+
+        .food__items {
+            margin-bottom: 70px;
+        }
+
+        h2 {
+            padding-bottom: 50px;
+        }
+    }
+
+    /* 
+    .gastronomy,
+    .culture {
+        p {
+            font-size: 42px !important;
+        }
+    } */
+
+
+}
+
+@media (width < 440px) {
+
+    .gastronomy,
+    .culture {
+        p {
+            font-size: 26px !important;
+            line-height: 41px !important;
+        }
+    }
+}
+
+@media (width < 400px) {
+    .gallary .gallary__inner h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+
+@media (width < 360px) {
+    .gallary .gallary__inner h1 {
+        font-size: 42px;
+        line-height: 48px;
+    }
+}
