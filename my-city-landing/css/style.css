@@ -10,8 +10,6 @@ body {
 }
 
 header {
-
-    /* position: relative; */
     input {
         display: none;
     }
@@ -132,7 +130,8 @@ header {
 
 
 .gallary {
-    margin-bottom: 185px;
+    /* margin-bottom: 185px; */
+    margin-bottom: clamp(6.25rem, 3.75rem + 12.500vw, 11.563rem);
 
     .gallary__inner {
         h1 {
@@ -145,8 +144,6 @@ header {
         }
 
         ul {
-            /* display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(326px, 1fr)); */
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -154,12 +151,18 @@ header {
             gap: clamp(1.25rem, -31.596rem + 50.532vw, 7.188rem);
 
             li {
+                cursor: pointer;
                 /* flex: 1 1 326px; */
                 flex: 1 1 clamp(16.25rem, -0.861rem + 48.889vw, 20.375rem);
 
                 img {
+                    transition: all .2s ease-in-out;
                     border-radius: 22px;
                     width: 100%;
+
+                    &:hover {
+                        transform: scale(1.03);
+                    }
                 }
             }
         }
@@ -193,12 +196,18 @@ header {
             gap: 125px;
 
             img {
+                cursor: pointer;
                 max-width: 520px;
                 width: 100%;
                 height: auto;
                 border: 5px solid #000000;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                 border-radius: 22px;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
             }
 
             h3 {
@@ -243,11 +252,14 @@ header {
     .social__inner {
         h2 {
             font-weight: 400;
-            font-size: 65px;
-            line-height: 84px;
+            /* font-size: 65px; */
+            font-size: clamp(2.063rem, 0.063rem + 10.000vw, 4.063rem);
+            /* line-height: 84px; */
+            line-height: clamp(3.25rem, 1.25rem + 10.000vw, 5.25rem);
             color: #000000;
             text-align: center;
-            padding-bottom: 150px;
+            /* padding-bottom: 150px; */
+            padding-bottom: clamp(3.75rem, -1.875rem + 28.125vw, 9.375rem);
         }
 
         ul {
@@ -255,7 +267,8 @@ header {
             justify-content: space-around;
 
             img {
-                width: 175px;
+                /* width: 175px; */
+                width: clamp(3.75rem, -0.76rem + 22.549vw, 10.938rem);
                 height: auto;
             }
         }
@@ -270,6 +283,8 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        /* gap: 40px;
+        flex-wrap: wrap; */
 
         ul {
             display: flex;
@@ -286,11 +301,69 @@ footer {
     }
 }
 
+
+
+
+@media (width < 1000px) {
+
+    .gastronomy,
+    .culture {
+        gap: 40px !important;
+    }
+}
+
+@media (width < 910px) {
+
+    .gastronomy {
+        flex-direction: column;
+
+        img {
+            order: 2;
+        }
+    }
+
+
+    .culture {
+        flex-direction: column;
+
+        img {
+            order: 2;
+        }
+    }
+}
+
 @media (width < 740px) {
     .gallary .gallary__inner h1 {
         font-size: 64px;
         line-height: 70px;
         padding-bottom: 32px;
+    }
+}
+
+@media(width < 700px) {
+    footer {
+        padding-block: 50px;
+
+        nav {
+            gap: 0px;
+            padding-left: 20px;
+            display: block;
+
+            ul:first-child {
+                padding-bottom: 20px;
+                border-bottom: 1px solid #000;
+                margin-bottom: 20px;
+            }
+
+            a {
+                font-size: 20px !important;
+                line-height: 15px !important;
+            }
+
+            ul {
+                gap: 10px;
+            }
+        }
     }
 }
 
@@ -302,21 +375,6 @@ footer {
 
     .header__inner nav {
         display: none;
-        /* position: fixed;
-        z-index: 4;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: gray;
-
-        ul {
-            flex-direction: column;
-            gap: 30px;
-            font-size: 35px;
-            align-items: flex-start;
-            padding: 40px;
-        } */
     }
 
     header .logo {
@@ -359,41 +417,15 @@ footer {
     body:has(.header__inner input:checked) {
         overflow: hidden;
     }
-}
 
 
-@media (width < 1000px) {
-
-    .gastronomy,
-    .culture {
-        gap: 40px !important;
-    }
-}
-
-@media (width < 910px) {
-
-    .gastronomy {
-        flex-direction: column;
-
-        img {
-            order: 2;
-        }
+    .social {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
-
-    .culture {
-        flex-direction: column;
-
-        img {
-            order: 2;
-        }
-    }
-}
-
-@media (width < 490px) {
-    .gallary .gallary__inner h1 {
-        font-size: 55px;
-        line-height: 60px;
+    .food {
+        padding-bottom: 100px;
     }
 }
 
@@ -422,6 +454,13 @@ footer {
     } */
 
 
+}
+
+@media (width < 490px) {
+    .gallary .gallary__inner h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
 }
 
 @media (width < 440px) {
