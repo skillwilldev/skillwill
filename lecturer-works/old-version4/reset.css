@@ -1,0 +1,220 @@
+:root {
+  --primary-color: #fafbfc;
+  --secondary-color: #112211;
+  --white-color: #ffffff;
+  --brand-color: #8dd3bb;
+  --brand-secondary-color: #cdeae1;
+
+  --font-family: "Montserrat", sans-serif;
+
+  --large-font: clamp(32px, 4vw, 46px);
+  --medium-font: clamp(28px, 2vw, 32px);
+  --small-font: clamp(18px, 2vw, 20px);
+  --tiny-font: 16px;
+  --link-font: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+  font-size: var(--link-font);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+input,
+textarea,
+select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.select-wrapper,
+label {
+  position: relative;
+}
+
+input::placeholder,
+select::placeholder {
+  color: var(--secondary-color);
+  font-size: var(--link-font);
+}
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 30px;
+}
+
+.select-wrapper::after {
+  content: url("./assets/down-icon.svg");
+  position: absolute;
+  color: var(--secondary-color);
+  font-size: 10px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: var(--link-font);
+}
+
+a:hover {
+  color: var(--brand-color);
+}

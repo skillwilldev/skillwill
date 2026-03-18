@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header-content padding-x">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <ul>
+            <li>
+              <a class="active-link link" href="#">
+                <img src="./assets/bed-icon.svg" alt="bed icon" />
+                Find Flight
+              </a>
+            </li>
+            <li>
+              <a class="link" href="#">
+                <img src="./assets/fly-icon.svg" alt="fly icon" />
+                Find Stays
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-logo">
+          <img src="./assets/logo.svg" alt="logo" />
+        </div>
+        <div class="header-buttons">
+          <button class="text-button">Log In</button>
+          <button class="priamary-button">Sign Up</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main-section padding-x margin-bottom">
+        <div class="container main-section-content">
+          <div class="main-section-content-title">
+            <h1>Make your travel whishlist, we`ll do the rest</h1>
+            <p>Special offers to suit your plan</p>
+          </div>
+
+          <div class="main-section-form">
+            <h2>Where are you flying?</h2>
+            <form class="main-section-form-content">
+              <div class="main-section-form-content-inputs">
+                <label for="from-to">
+                  <input type="text" id="from-to" placeholder="From - To" />
+                  <span class="label-input-text">From - To</span>
+                </label>
+                <label for="trip" class="select-wrapper">
+                  <select name="trip" id="trip">
+                    <option value="" selected>Trip</option>
+                    <option value="one-way">One-way</option>
+                    <option value="round-trip">Round-trip</option>
+                    <option value="multi-city">Multi-city</option>
+                  </select>
+                </label>
+                <label for="depart-return">
+                  <input
+                    type="text"
+                    id="depart-return"
+                    placeholder="Depart - Return"
+                  />
+                  <span class="label-input-text">Depart - Return</span>
+                </label>
+                <label for="passenger-class">
+                  <input
+                    type="text"
+                    id="passenger-class"
+                    placeholder="Passenger - Class"
+                  />
+                  <span class="label-input-text">Passenger - Class</span>
+                </label>
+              </div>
+            </form>
+            <div class="main-section-form-buttons">
+              <button class="text-button">
+                <i class="fa-solid fa-plus"></i>
+                Add Promo Code
+              </button>
+              <button class="brand-button">
+                <i class="fa-solid fa-location-arrow"></i>
+                Show Filghts
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container margin-bottom padding-x travel-cards-section">
+        <div class="travel-info-header">
+          <div class="travel-info">
+            <h2>Fall into travel</h2>
+            <p>
+              Going somewhere to celebrate this season? Whether you’re going
+              home or somewhere to roam, we’ve got the travel tools to get you
+              to your destination.
+            </p>
+          </div>
+
+          <button class="outline-brand-button">See All</button>
+        </div>
+        <div class="travel-cards-list">
+          <div class="travel-card">
+            <img src="./assets/travel-cards/card1.svg" alt="travel card 1" />
+            <div class="travel-card-content">
+              <div class="travel-card-content-info">
+                <div class="travel-card-content-info-title">
+                  <h2>Melbourne</h2>
+                  <p>An amazing journey</p>
+                </div>
+                <span>$ 700</span>
+              </div>
+              <button class="brand-button">Book Flight</button>
+            </div>
+          </div>
+          <div class="travel-card">
+            <img src="./assets/travel-cards/card2.svg" alt="travel card 2" />
+            <div class="travel-card-content">
+              <div class="travel-card-content-info">
+                <div class="travel-card-content-info-title">
+                  <h2>Paris</h2>
+                  <p>A Paris Adventure</p>
+                </div>
+                <span>$ 600</span>
+              </div>
+              <button class="brand-button">Book Flight</button>
+            </div>
+          </div>
+          <div class="travel-card">
+            <img src="./assets/travel-cards/card3.svg" alt="travel card 3" />
+            <div class="travel-card-content">
+              <div class="travel-card-content-info">
+                <div class="travel-card-content-info-title">
+                  <h2>London</h2>
+                  <p>London eye adventure</p>
+                </div>
+                <span>$ 350</span>
+              </div>
+              <button class="brand-button">Book Flight</button>
+            </div>
+          </div>
+          <div class="travel-card">
+            <img src="./assets/travel-cards/card4.svg" alt="travel card 4" />
+            <div class="travel-card-content">
+              <div class="travel-card-content-info">
+                <div class="travel-card-content-info-title">
+                  <h2>Columbia</h2>
+                  <p>Amazing streets</p>
+                </div>
+                <span>$ 700</span>
+              </div>
+              <button class="brand-button">Book Flight</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container margin-large-bottom padding-x travel-info-section"
+      >
+        <div class="travel-info-header">
+          <div class="travel-info">
+            <h2>Fall into travel</h2>
+            <p>
+              Going somewhere to celebrate this season? Whether you’re going
+              home or somewhere to roam, we’ve got the travel tools to get you
+              to your destination.
+            </p>
+          </div>
+
+          <button class="outline-brand-button">See All</button>
+        </div>
+
+        <div class="travel-info-list">
+          <div class="main-travel-info">
+            <div class="main-travel-info-badge">
+              <span>New</span>
+              <span>$700</span>
+            </div>
+            <div class="main-travel-info-content">
+              <h2>Backpacking Sri Lanka</h2>
+              <p>
+                Traveling is a unique experience as it's the best way to unplug
+                from the pushes and pulls of daily life. It helps us to forget
+                about our problems, frustrations, and fears at home. During our
+                journey, we experience life in different ways. We explore new
+                places, cultures, cuisines, traditions, and ways of living.
+              </p>
+            </div>
+            <button class="brand-button">Book Flight</button>
+          </div>
+          <div class="travel-info-item">
+            <img src="./assets/travel-cards/info-card1.svg" alt="info card 1" />
+          </div>
+          <div class="travel-info-item">
+            <img src="./assets/travel-cards/info-card2.svg" alt="info card 2" />
+          </div>
+          <div class="travel-info-item">
+            <img src="./assets/travel-cards/info-card3.svg" alt="info card 3" />
+          </div>
+          <div class="travel-info-item">
+            <img src="./assets/travel-cards/info-card4.svg" alt="info card 4" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-content padding-x">
+      <div class="subscribe-content">
+        <h2>Subscribe Newsletter</h2>
+        <div>
+          <h3>The Travel</h3>
+          <p>
+            Get inspired! Receive travel discounts, tips and behind the scenes
+            stories.
+          </p>
+          <form>
+            <input type="text" placeholder="Your email address" />
+            <button class="priamary-button">Subscribe</button>
+          </form>
+
+          <img
+            class="subscribe-content-icon"
+            src="./assets/subscribe-icon.svg"
+            alt="subscribe icon"
+          />
+        </div>
+      </div>
+      <div class="container footer-container">
+        <div class="footer-content-logo">
+          <img src="./assets/footer-logo.svg" alt="logo" />
+          <div>
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <nav class="footer-content-nav">
+          <ul>
+            <h2>Our Destinations</h2>
+            <li><a href="#">Canada</a></li>
+            <li><a href="#">Aleksa</a></li>
+            <li><a href="#">France</a></li>
+            <li><a href="#">Iceland</a></li>
+          </ul>
+          <ul>
+            <h2>Our Activities</h2>
+            <li><a href="#">Northern Lights</a></li>
+            <li><a href="#">Cruising & sailing</a></li>
+            <li><a href="#">Multi-activities</a></li>
+            <li><a href="#">Kayagain</a></li>
+          </ul>
+          <ul>
+            <h2>Travel Blogs</h2>
+            <li><a href="#">Bali Travel Guide</a></li>
+            <li><a href="#">Sri Lanks Travel Guide</a></li>
+            <li><a href="#">Peru Travel Guide</a></li>
+            <li><a href="#">Bali Travel Guide</a></li>
+          </ul>
+          <ul>
+            <h2>About Us</h2>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Work with </a></li>
+          </ul>
+          <ul>
+            <h2>Contact Us</h2>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">With with us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

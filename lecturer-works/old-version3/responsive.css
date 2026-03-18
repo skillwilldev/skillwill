@@ -1,0 +1,262 @@
+@media (max-width: 1440px) {
+  .margin-bottom {
+    margin-bottom: 80px;
+  }
+
+  .about-us-section,
+  .header,
+  .pricing-section,
+  .footer-section,
+  .accordion-section .accordion-section-content {
+    padding: 0 60px;
+  }
+
+  /* Hero Section */
+
+  .hero-section {
+    height: 60vh;
+  }
+
+  .hero-section img {
+    width: 100%;
+    height: 1000px;
+  }
+
+  /* About Us Section */
+
+  .about-us-section .grid-container {
+    gap: 16px;
+  }
+
+  /* Slider Section */
+
+  .slider-section {
+    padding-top: 20px;
+  }
+
+  .slider-section .slider-section-container {
+    gap: 40px;
+  }
+
+  .slider-section .slider-section-content {
+    padding: 0 16px;
+  }
+
+  .slider-section .slider-cards-list .slider-card {
+    height: 400px;
+    min-width: 600px;
+  }
+
+  /* Pricing Section */
+
+  .pricing-section .pricing-review-card {
+    margin-bottom: 40px;
+  }
+
+  .pricing-section .pricing-overview-cards {
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .pricing-section .pricing-overview-cards .overview-card,
+  .pricing-section .overview-card.pricing-overview-aside {
+    grid-area: unset;
+  }
+
+  .pricing-section .overview-card.pricing-overview-aside {
+    gap: 20px;
+  }
+
+  .pricing-section .overview-unlimited-services,
+  .pricing-section .overview-unlimited-services-list {
+    padding: 0;
+  }
+
+  /*  Accordion Section */
+
+  .accordion-section .accordion-bg-image {
+    display: none;
+  }
+
+  /* Contact Section */
+
+  .contact-us-section {
+    gap: 20px;
+  }
+
+  .contact-us-section .contact-us-section-content img {
+    display: none;
+  }
+
+  .contact-us-section .wierd-star {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .active-button {
+    padding: 8px 20px;
+  }
+
+  /* Header */
+  .header-content .logo {
+    width: 100px;
+  }
+
+  .header-content .auth-buttons {
+    gap: 8px;
+  }
+
+  .header-content .navigation,
+  .header-content .auth-buttons {
+    display: none;
+  }
+
+  .header-content .menu-icon {
+    display: block;
+  }
+
+  /* About Us Section */
+
+  .about-us-section .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-container .grid-item:nth-of-type(4) {
+    grid-area: unset;
+    display: flex;
+    justify-content: space-between;
+    order: -1;
+  }
+
+  .grid-container .grid-item:nth-of-type(5) {
+    grid-column: unset;
+    order: -1;
+  }
+
+  .grid-container .grid-item:nth-of-type(5) .grid-item-cover {
+    min-width: 230px;
+    height: 240px;
+  }
+
+  /* Pricing Section */
+
+  .pricing-section .pricing-review-card {
+    max-width: 100%;
+    justify-content: start;
+  }
+
+  /* Footer Section */
+
+  .footer-section .footer-content {
+    padding: 40px;
+  }
+
+  .footer-section .footer-content .footer-content-main {
+    gap: 20px;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 1024px) {
+  .margin-bottom {
+    margin-bottom: 40px;
+  }
+
+  .about-us-section,
+  .header,
+  .pricing-section,
+  .footer-section,
+  .accordion-section .accordion-section-content {
+    padding: 0 16px;
+  }
+
+  /* Pricing Section */
+
+  .pricing-section .pricing-overview-cards {
+    gap: 20px;
+  }
+
+  /* Accordion Section */
+
+  .accordion-section .accordion-section-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .accordion-section .accordion-section-title,
+  .accordion-section .accordion {
+    width: 100%;
+  }
+
+  .accordion-section .accordion-section-title h2 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* About Us Section */
+
+  .grid-container .grid-item:nth-of-type(4) {
+    flex-direction: column;
+  }
+
+  .grid-container .grid-item:nth-of-type(5) {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .grid-container .grid-item:nth-of-type(5) .grid-item-cover {
+    min-width: 100%;
+  }
+
+  /* Slider Section */
+
+  .slider-section .slider-cards-list {
+    gap: 16px;
+  }
+
+  .slider-section .slider-section-container {
+    gap: 20px;
+  }
+
+  .slider-section .slider-cards-list .slider-card {
+    height: 300px;
+    min-width: 90%;
+    padding: 16px;
+  }
+
+  .slider-section .slider-section-content-arrow {
+    width: 35px;
+    height: 35px;
+  }
+
+  .slider-section .slider-section-content-text {
+    max-width: 242px;
+  }
+
+  .slider-section .slider-section-content-text h2 {
+    margin-bottom: 16px;
+  }
+
+  /* Pricing Section */
+
+  .footer-section .footer-content-main nav ul {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .pricing-overview-aside .overview-unlimited-services-list,
+  .footer-content-footer {
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  /* Footer Section */
+
+  .footer-section .footer-content {
+    padding: 18px;
+    border-radius: 10px;
+  }
+}

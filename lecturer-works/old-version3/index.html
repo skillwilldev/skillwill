@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-content">
+        <a href="/" class="logo">
+          <img src="./assets/logo.svg" alt="logo" />
+        </a>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#how-it-works">How it Works</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons">
+          <button class="inactive-button">Sign In</button>
+          <button class="active-button active-blue">Sign Up</button>
+        </div>
+        <label for="checkbox" class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" hidden id="checkbox" />
+        <div class="burger-menu">
+          <div class="burger-menu-content">
+            <a href="/" class="logo">
+              <img src="./assets/logo.svg" alt="logo" />
+            </a>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#how-it-works">How it Works</a></li>
+              <li><a href="#services">Services</a></li>
+            </ul>
+          </div>
+          <div class="burger-auth-buttons">
+            <button class="inactive-button">Sign In</button>
+            <button class="active-button active-blue">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="hero-section" id="home">
+        <img src="./assets/hero-overlay.svg" alt="hero-image" />
+        <div class="hero-section-content">
+          <h1>Awesome UI Dark Template for Webflow Agency</h1>
+          <button class="active-button active-black">Get In Touch</button>
+        </div>
+      </section>
+      <section class="margin-bottom about-us-section" id="about">
+        <div class="container">
+          <h1>What We do</h1>
+
+          <div class="grid-container">
+            <div class="grid-item">
+              <div class="grid-item-content">
+                <div class="grid-item-image">
+                  <img src="./assets/grid-images/Frame.svg" alt="Frame" />
+                </div>
+                <h2>Web Design</h2>
+                <p>
+                  From concept to launch, we create stunning, user-centric
+                  websites that elevate your brand and engage your audience.
+                </p>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="grid-item-content">
+                <div class="grid-item-image">
+                  <img src="./assets/grid-images/Frame1.svg" alt="Frame1" />
+                </div>
+                <h2>UI/UX Design</h2>
+                <p>
+                  From concept to launch, we create stunning, user-centric
+                  websites that elevate your brand and engage your audience.
+                </p>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="grid-item-content">
+                <div class="grid-item-image">
+                  <img src="./assets/grid-images/Frame2.svg" alt="Frame2" />
+                </div>
+                <h2>Responsive Design</h2>
+                <p>
+                  From concept to launch, we create stunning, user-centric
+                  websites that elevate your brand and engage your audience.
+                </p>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="grid-item-content">
+                <div class="grid-item-image">
+                  <img src="./assets/grid-images/Frame3.svg" alt="Frame3" />
+                </div>
+                <h2>E-commerce Solutions:</h2>
+                <p>
+                  From concept to launch, we create stunning, user-centric
+                  websites that elevate your brand and engage your audience.
+                </p>
+              </div>
+
+              <div class="grid-item-cover">
+                <img src="./assets/grid-images/group.svg" alt="group" />
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="grid-item-content">
+                <div class="grid-item-image">
+                  <img src="./assets/grid-images/Frame5.svg" alt="Frame5" />
+                </div>
+                <h2>Webflow</h2>
+                <p>
+                  From concept to launch, we create stunning, user-centric
+                  websites that elevate your brand and engage your audience.
+                </p>
+              </div>
+              <div class="grid-item-cover">
+                <img
+                  src="./assets/grid-images/logo-vector.svg"
+                  alt="logo-vector"
+                />
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="grid-item-content">
+                <div class="grid-item-image">
+                  <img src="./assets/grid-images/Frame4.svg" alt="Frame4" />
+                </div>
+                <h2>Custom Development</h2>
+                <p>
+                  From concept to launch, we create stunning, user-centric
+                  websites that elevate your brand and engage your audience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="margin-bottom slider-section" id="how-it-works">
+        <div class="slider-section-container container">
+          <div class="slider-section-content">
+            <div class="slider-section-content-arrow">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="slider-section-content-text">
+              <h2>Check our Work</h2>
+              <p>
+                Take a look at some of our recent projects to see how we've
+                helped businesses like yours succeed online.
+              </p>
+            </div>
+            <div class="slider-section-content-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="slider-cards-list">
+            <div class="slider-card">
+              <img src="./assets/slider-images/slider2.png" alt="slider2" />
+            </div>
+            <div class="slider-card">
+              <img src="./assets/slider-images/slider1.png" alt="slider1" />
+            </div>
+            <div class="slider-card">
+              <img src="./assets/slider-images/slider3.png" alt="slider3" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pricing-section margin-bottom" id="services">
+        <div class="container pricing-section-content">
+          <div class="pricing-review-card">
+            <img
+              src="./assets/reviews.svg"
+              alt="reviews"
+              class="pricing-review-card-image"
+            />
+            <div class="pricing-review-icons">
+              <p><span>5.0</span> Based on <span>145</span> Reviews</p>
+              <ul>
+                <li>
+                  <img src="./assets/star-icon.svg" alt="star-icon" />
+                </li>
+                <li>
+                  <img src="./assets/star-icon.svg" alt="star-icon" />
+                </li>
+                <li>
+                  <img src="./assets/star-icon.svg" alt="star-icon" />
+                </li>
+                <li>
+                  <img src="./assets/star-icon.svg" alt="star-icon" />
+                </li>
+                <li>
+                  <img src="./assets/star-icon.svg" alt="star-icon" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pricing-overview-cards">
+            <div class="overview-card pricing-overview-header">
+              <h2>Pricing</h2>
+              <p>
+                Take a look at some of our recent projects to see how we've
+                helped businesses like yours succeed online.
+              </p>
+            </div>
+            <div class="overview-card pricing-overview-schedule">
+              <h2>Let's Schedule a Meeting</h2>
+              <button class="active-button active-blue">
+                Schedule Meeting
+              </button>
+            </div>
+            <div class="overview-card pricing-overview-aside">
+              <div class="overview-unlimited-services">
+                <h2>Unlimited Services</h2>
+                <p>
+                  Take a look at some of our recent projects to see how we've
+                  helped businesses like yours succeed online.
+                </p>
+              </div>
+              <div class="overview-unlimited-services-list">
+                <ul>
+                  <li>
+                    <span>
+                      <i class="fa-solid fa-check"></i>
+                    </span>
+                    Unlimited requests
+                  </li>
+                  <li>
+                    <span>
+                      <i class="fa-solid fa-check"></i>
+                    </span>
+                    Unlimited requests
+                  </li>
+                  <li>
+                    <span>
+                      <i class="fa-solid fa-check"></i>
+                    </span>
+                    Unlimited requests
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <span>
+                      <i class="fa-solid fa-check"></i>
+                    </span>
+                    Unlimited requests
+                  </li>
+                  <li>
+                    <span>
+                      <i class="fa-solid fa-check"></i>
+                    </span>
+                    Unlimited requests
+                  </li>
+                  <li>
+                    <span>
+                      <i class="fa-solid fa-check"></i>
+                    </span>
+                    Unlimited requests
+                  </li>
+                </ul>
+              </div>
+              <div class="overview-price">
+                <h2>$3.250 <span>/ mo</span></h2>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="accordion-section container">
+        <img
+          class="accordion-bg-image"
+          src="./assets/accordion-section-bg.svg"
+          alt="accordion-bg-image"
+        />
+        <div class="accordion-section-content margin-bottom">
+          <div class="accordion-section-title">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <input
+                type="checkbox"
+                id="accordion-1"
+                class="accordion-checkbox"
+              />
+              <label for="accordion-1" class="accordion-trigger">
+                <span>What is SkillWill?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </label>
+              <div class="accordion-content">
+                <div class="accordion-inner">
+                  <div class="accordion-desc">
+                    <p>
+                      SkillWill is an online learning platform that helps you
+                      master new skills through structured courses, hands-on
+                      projects, and expert mentorship. Whether you're learning
+                      <strong>web development</strong>, design, or data science,
+                      we've got you covered.
+                    </p>
+                    <p>
+                      Our courses include video lessons, quizzes, and real-world
+                      projects to build your portfolio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <input
+                type="checkbox"
+                id="accordion-2"
+                class="accordion-checkbox"
+              />
+              <label for="accordion-2" class="accordion-trigger">
+                <span>How does pricing work?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </label>
+              <div class="accordion-content">
+                <div class="accordion-inner">
+                  <div class="accordion-desc">
+                    <ul>
+                      <li>Monthly subscription: $29/month</li>
+                      <li>Annual plan: $199/year (save 43%)</li>
+                      <li>Lifetime access: one-time payment</li>
+                    </ul>
+                    <p>
+                      All plans include unlimited course access, certificates,
+                      and community support.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <input
+                type="checkbox"
+                id="accordion-3"
+                class="accordion-checkbox"
+              />
+              <label for="accordion-3" class="accordion-trigger">
+                <span>Can I get a refund?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </label>
+              <div class="accordion-content">
+                <div class="accordion-inner">
+                  <div class="accordion-desc">
+                    <p>
+                      Yes. We offer a
+                      <strong>14-day money-back guarantee</strong> on all plans.
+                      If you're not satisfied, contact support within 14 days of
+                      purchase for a full refund—no questions asked.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <input
+                type="checkbox"
+                id="accordion-4"
+                class="accordion-checkbox"
+              />
+              <label for="accordion-4" class="accordion-trigger">
+                <span>Technical requirements</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </label>
+              <div class="accordion-content">
+                <div class="accordion-inner">
+                  <div class="accordion-desc">
+                    <p>
+                      You need a modern browser (Chrome, Firefox, Safari, Edge),
+                      stable internet, and a computer or tablet. For coding
+                      courses, we recommend at least 8GB RAM. Some courses use
+                      <code>Node.js</code> or <code>Python</code>—installation
+                      guides are provided.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="margin-bottom contact-us-section">
+        <div class="contact-us-section-content">
+          <h1>Let's Get in Touch</h1>
+          <img src="./assets/form-images/some-icon.svg" alt="some-icon" />
+        </div>
+
+        <form class="contact-us-form">
+          <label for="email">
+            <span>Email</span>
+            <input type="email" placeholder="Your Email" id="email" />
+          </label>
+          <label for="name">
+            <span>Name</span>
+            <input type="text" placeholder="Your Name" id="name" />
+          </label>
+          <label for="message">
+            <span>Message</span>
+            <textarea
+              placeholder="Write your message..."
+              id="message"
+            ></textarea>
+          </label>
+          <button class="active-button active-blue">Get In Touch</button>
+        </form>
+
+        <img
+          class="wierd-star"
+          src="./assets/form-images/wierd-star.svg"
+          alt=""
+        />
+      </section>
+    </main>
+
+    <footer class="footer-section margin-bottom">
+      <div class="container footer-content">
+        <div class="footer-content-header">
+          <img src="./assets/Logo.svg" alt="logo" />
+        </div>
+        <div class="footer-content-main">
+          <p>
+            Ready to elevate your online presence? Contact us today to discuss
+            <i>
+              your project and discover how we can bring your vision to life.
+            </i>
+          </p>
+          <nav class="footer-content-main-navigation">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">How it Works</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-content-footer">
+          <div class="footer-content-footer-heart">
+            <i class="fa-regular fa-heart"></i>
+            <p>Made with love powered by inkyy.com</p>
+          </div>
+          <div class="footer-content-footer-social-icons">
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-dribbble"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

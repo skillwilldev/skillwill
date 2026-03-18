@@ -1,0 +1,130 @@
+:root {
+  --white-color: #fff;
+  --primary-bg-color: #f5f8ff;
+  --primary-color: #252432;
+  --secondary-color: #8987a1;
+  --brand-color: #4e47ff;
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  background: var(--primary-bg-color);
+  color: var(--primary-color);
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.accordion {
+  margin: 0 auto;
+}
+
+.accordion-item {
+  position: relative;
+  background: var(--white-color);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(37, 36, 50, 0.06);
+  border: 1px solid rgba(78, 71, 255, 0.1);
+}
+
+.accordion-trigger {
+  width: 100%;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.accordion-trigger:hover {
+  background: rgba(78, 71, 255, 0.04);
+}
+
+.accordion-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand-color);
+  font-size: 20px;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.accordion-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.accordion-checkbox:checked ~ .accordion-trigger .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.accordion-checkbox:checked ~ .accordion-content {
+  grid-template-rows: 1fr;
+}
+
+.accordion-inner {
+  overflow: hidden;
+}
+
+.accordion-desc {
+  margin-top: 16px;
+  padding: 0 24px 20px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+
+.accordion-desc p {
+  margin-bottom: 12px;
+}
+
+.accordion-desc p:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-desc ul,
+.accordion-desc ol {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.accordion-desc code {
+  background: rgba(78, 71, 255, 0.08);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.accordion-desc strong {
+  color: var(--primary-color);
+}
