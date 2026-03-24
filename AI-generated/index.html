@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderland — Nature Escapes</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- BURGER CHECKBOX -->
+    <input type="checkbox" id="burger">
+
+    <!-- OVERLAY (close on click) -->
+    <label class="nav-overlay" for="burger"></label>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <label class="burger-close" for="burger"></label>
+        <nav>
+            <a href="#gallery" onclick="">Gallery</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#testimonials">Stories</a>
+            <a href="#team">Team</a>
+        </nav>
+        <p class="menu-footer">Wanderland © 2025</p>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <a href="#" class="logo">Wander<span>land</span></a>
+        <nav class="desktop-nav">
+            <a href="#gallery">Gallery</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#testimonials">Stories</a>
+            <a href="#team">Team</a>
+            <a href="#" class="nav-cta">Explore</a>
+        </nav>
+        <label class="burger-open" for="burger">
+            <span></span><span></span><span></span>
+        </label>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-left">
+            <p class="hero-tag">Nature Escapes — 2025</p>
+            <h1>Where the <em>wild</em><br>calls your name</h1>
+            <p class="hero-desc">Handpicked destinations where untouched nature meets the quiet beauty of the world.
+                From Patagonian peaks to Scandinavian fjords.</p>
+            <div class="hero-actions">
+                <a href="#gallery" class="btn-primary">Discover Places</a>
+                <a href="#testimonials" class="btn-ghost">Read Stories</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-img-wrap">
+                <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=900&q=80"
+                    alt="Patagonia nature">
+            </div>
+            <div class="hero-badge">
+                <p>Destinations curated</p>
+                <strong>48+</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+        <div class="gallery-header">
+            <div>
+                <p class="section-label">Visual Journal</p>
+                <h2 class="section-title">The <em>world</em> awaits</h2>
+            </div>
+            <p style="font-size:0.8rem;color:var(--muted);letter-spacing:0.06em;">Scroll to explore →</p>
+        </div>
+        <div class="gallery-scroll-wrap">
+            <div class="gallery-track">
+
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&q=80" alt="Swiss Alps">
+                    <span class="gallery-tag">Europe</span>
+                    <div class="gallery-card-info">
+                        <h3>Swiss Alps</h3>
+                        <p>Switzerland</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=600&q=80"
+                        alt="Norway Fjords">
+                    <span class="gallery-tag">Scandinavia</span>
+                    <div class="gallery-card-info">
+                        <h3>Norwegian Fjords</h3>
+                        <p>Norway</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=600&q=80" alt="Patagonia">
+                    <span class="gallery-tag">South America</span>
+                    <div class="gallery-card-info">
+                        <h3>Patagonia</h3>
+                        <p>Argentina & Chile</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=600&q=80" alt="Iceland">
+                    <span class="gallery-tag">Arctic</span>
+                    <div class="gallery-card-info">
+                        <h3>Iceland Highlands</h3>
+                        <p>Iceland</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Dolomites">
+                    <span class="gallery-tag">Europe</span>
+                    <div class="gallery-card-info">
+                        <h3>The Dolomites</h3>
+                        <p>Italy</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+                        alt="New Zealand">
+                    <span class="gallery-tag">Oceania</span>
+                    <div class="gallery-card-info">
+                        <h3>Fiordland</h3>
+                        <p>New Zealand</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80" alt="Canada">
+                    <span class="gallery-tag">North America</span>
+                    <div class="gallery-card-info">
+                        <h3>Banff National Park</h3>
+                        <p>Canada</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section id="destinations">
+        <div style="max-width:560px">
+            <p class="section-label">Why Travel Wild</p>
+            <h2 class="section-title">Nature's best-kept <em>secrets</em></h2>
+            <p class="section-desc">Each destination chosen for its raw beauty, ecological richness, and the singular
+                feeling it gives — that you are somewhere truly alive.</p>
+        </div>
+        <div class="dest-grid">
+            <div class="dest-card">
+                <div class="dest-num">01</div>
+                <h3>Untouched Landscapes</h3>
+                <p>Vast territories where human footprints are few — glaciers, ancient forests, volcanic highlands, and
+                    coastal cliffs sculpted by millennia.</p>
+            </div>
+            <div class="dest-card">
+                <div class="dest-num">02</div>
+                <h3>Wildlife Encounters</h3>
+                <p>From Patagonian condors to Arctic foxes in Iceland — nature up close, on its own terms, in habitats
+                    where wildlife still roams freely.</p>
+            </div>
+            <div class="dest-card">
+                <div class="dest-num">03</div>
+                <h3>Seasonal Wonders</h3>
+                <p>Northern Lights in winter. Wildflower meadows in spring. Midnight sun in summer. Every season
+                    transforms these places into something new.</p>
+            </div>
+            <div class="dest-card">
+                <div class="dest-num">04</div>
+                <h3>Mountain Solitude</h3>
+                <p>The Alps, Andes, Himalayas, and Dolomites offer not just altitude but perspective — silence broken
+                    only by wind and the crunch of snow.</p>
+            </div>
+            <div class="dest-card">
+                <div class="dest-num">05</div>
+                <h3>Coastal Wilderness</h3>
+                <p>Where sea meets rock in dramatic fashion — Faroe Islands, New Zealand fjords, Lofoten archipelago.
+                    Ocean and land in constant dialogue.</p>
+            </div>
+            <div class="dest-card">
+                <div class="dest-num">06</div>
+                <h3>Desert Silence</h3>
+                <p>Atacama, Namib, Sahara's edges — deserts that stretch to every horizon, where silence is total and
+                    starfields are unobscured by light.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+        <p class="section-label">Traveller Stories</p>
+        <h2 class="section-title">Words from the <em>road</em></h2>
+        <div class="testi-grid">
+
+            <div class="testi-card">
+                <div class="testi-quote">"</div>
+                <div class="stars">★★★★★</div>
+                <p class="testi-text">Standing at the edge of a Norwegian fjord, I understood why people cross oceans
+                    just to feel small in the most beautiful way.</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">A</div>
+                    <div class="testi-info">
+                        <strong>Anna Kovalenko</strong>
+                        <span>Kyiv, Ukraine</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testi-card">
+                <div class="testi-quote">"</div>
+                <div class="stars">★★★★★</div>
+                <p class="testi-text">Patagonia rewired something in me. The wind, the silence, the sheer scale of
+                    everything — it felt like the planet breathing.</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">M</div>
+                    <div class="testi-info">
+                        <strong>Marco Ferretti</strong>
+                        <span>Milan, Italy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testi-card">
+                <div class="testi-quote">"</div>
+                <div class="stars">★★★★★</div>
+                <p class="testi-text">Iceland in winter is not a destination — it's a state of mind. Every hour of that
+                    trip I felt completely present, completely alive.</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">S</div>
+                    <div class="testi-info">
+                        <strong>Sophie Müller</strong>
+                        <span>Berlin, Germany</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team">
+        <div style="max-width:560px;margin-bottom:0">
+            <p class="section-label">Our Curators</p>
+            <h2 class="section-title">The people behind <em>the journey</em></h2>
+            <p class="section-desc">Seasoned explorers, photographers, and naturalists who have spent years finding the
+                places that take your breath away.</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" alt="James">
+                    <div class="team-img-overlay"></div>
+                </div>
+                <h3>James Crawford</h3>
+                <p>Founder & Explorer</p>
+            </div>
+            <div class="team-card">
+                <div class="team-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80" alt="Elena">
+                    <div class="team-img-overlay"></div>
+                </div>
+                <h3>Elena Vasquez</h3>
+                <p>Head of Curation</p>
+            </div>
+            <div class="team-card">
+                <div class="team-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Lars">
+                    <div class="team-img-overlay"></div>
+                </div>
+                <h3>Lars Eriksson</h3>
+                <p>Wilderness Photographer</p>
+            </div>
+            <div class="team-card">
+                <div class="team-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1555320818-21ebf0faf145" alt="Yuki">
+                    <div class="team-img-overlay"></div>
+                </div>
+                <h3>Yuki Tanaka</h3>
+                <p>Nature Journalist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">Wander<span>land</span></a>
+                <p class="footer-tagline">Guiding curious souls toward the earth's most extraordinary wild places.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#testimonials">Stories</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Regions</h4>
+                <ul>
+                    <li><a href="#">Europe</a></li>
+                    <li><a href="#">South America</a></li>
+                    <li><a href="#">Scandinavia</a></li>
+                    <li><a href="#">Oceania</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Wanderland. All rights reserved.</span>
+            <span>Crafted with care for wild places.</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
